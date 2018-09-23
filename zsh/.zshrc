@@ -7,7 +7,7 @@ export ZSH=~/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="spaceship"
+ZSH_THEME="pure"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -60,25 +60,31 @@ ZSH_THEME="spaceship"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   almostontop
+  autojump
   git
+  zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
 
+# Source Partials
+for file in ~/.zsh/*; do
+  source "$file"
+done
+
 # User configuration
 export EDITOR='vim'
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+# Paths
+export PY_USER_SITE=$(/usr/bin/env python3 -m site --user-site)
 
-# ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
+case `uname` in
+  Darwin)
+    export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/Library/Python/3.7/bin"
+  ;;
+  Linux)
+    export PATH="$PATH:$HOME:/.local/bin"
+  ;;
+esac
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

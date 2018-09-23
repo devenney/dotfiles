@@ -1,0 +1,63 @@
+[submodule "vim/.vim/pack/plugins/start/nerdtree"]
+	path = vim/.vim/pack/plugins/start/nerdtree
+	url = https://github.com/scrooloose/nerdtree
+[submodule "zsh/.oh-my-zsh/custom/plugins/zsh-autosuggestions"]
+	path = zsh/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "zsh/.oh-my-zsh/custom/plugins/almostontop"]
+	path = zsh/.oh-my-zsh/custom/plugins/almostontop
+	url = https://github.com/Valiev/almostontop
+[submodule "vim/.vim/pack/plugins/start/vim-unimpaired"]
+	path = vim/.vim/pack/plugins/start/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired
+[submodule "vim/.vim/pack/plugins/start/vim-airline"]
+	path = vim/.vim/pack/plugins/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule "vim/.vim/pack/plugins/start/vim-airline-themes"]
+	path = vim/.vim/pack/plugins/start/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
+[submodule "vim/.vim/pack/plugins/opt/vim-colorschemes"]
+	path = vim/.vim/pack/plugins/opt/vim-colorschemes
+	url = https://github.com/flazz/vim-colorschemes
+[submodule "vim/.vim/pack/plugins/start/jedi-vim"]
+	path = vim/.vim/pack/plugins/start/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim
+[submodule "zsh/.oh-my-zsh/custom/themes/spaceship-prompt"]
+	path = zsh/.oh-my-zsh/custom/themes/spaceship-prompt
+	url = https://github.com/denysdovhan/spaceship-prompt
+[submodule "vim/.vim/pack/plugins/start/tagbar"]
+	path = vim/.vim/pack/plugins/start/tagbar
+	url = https://github.com/majutsushi/tagbar
+[submodule "vim/.vim/pack/plugins/start/vim-go"]
+	path = vim/.vim/pack/plugins/start/vim-go
+	url = https://github.com/fatih/vim-go
+[submodule "vim/.vim/pack/plugins/start/YouCompleteMe"]
+	path = vim/.vim/pack/plugins/start/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe
+[submodule "vim/.vim/pack/plugins/start/vim-gitgutter"]
+	path = vim/.vim/pack/plugins/start/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter
+[submodule "vim/.vim/pack/plugins/start/vim-fugitive"]
+	path = vim/.vim/pack/plugins/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "vim/.vim/pack/plugins/start/fzf.vim"]
+	path = vim/.vim/pack/plugins/start/fzf.vim
+	url = https://github.com/junegunn/fzf.vim
+[submodule "vim/.vim/pack/plugins/start/fzf"]
+	path = vim/.vim/pack/plugins/start/fzf
+	url = https://github.com/junegunn/fzf
+[submodule "vim/.vim/pack/plugins/start/vim-terraform"]
+	path = vim/.vim/pack/plugins/start/vim-terraform
+	url = https://github.com/hashivim/vim-terraform
+[submodule "vim/.vim/pack/plugins/start/vim-terraform-completion"]
+	path = vim/.vim/pack/plugins/start/vim-terraform-completion
+	url = https://github.com/juliosueiras/vim-terraform-completion
+[submodule "zsh/.oh-my-zsh/custom/themes/zsh"]
+	path = zsh/.oh-my-zsh/custom/themes/dracula
+	url = https://github.com/dracula/zsh.git
+[submodule "zsh/.oh-my-zsh/custom/themes/pure"]
+	path = zsh/.oh-my-zsh/custom/themes/pure
+	url = https://github.com/sindresorhus/pure
+[submodule "zsh/.oh-my-zsh/custom/plugins/autojump"]
+	path = zsh/.oh-my-zsh/custom/plugins/autojump
+	url = https://github.com/wting/autojump
