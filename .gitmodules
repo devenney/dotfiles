@@ -67,3 +67,6 @@
 [submodule "zsh/.oh-my-zsh/custom/plugins/zsh-nvm"]
 	path = zsh/.oh-my-zsh/custom/plugins/zsh-nvm
 	url = https://github.com/lukechilds/zsh-nvm
+[submodule "vim/.vim/pack/plugins/start/vim-mustache-handlebars"]
+	path = vim/.vim/pack/plugins/start/vim-mustache-handlebars
+	url = https://github.com/mustache/vim-mustache-handlebars
