@@ -63,6 +63,7 @@ plugins=(
   autojump
   git
   zsh-autosuggestions
+  zsh-nvm
 )
 
 source $ZSH/oh-my-zsh.sh

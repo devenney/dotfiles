@@ -61,3 +61,9 @@
 [submodule "zsh/.oh-my-zsh/custom/plugins/autojump"]
 	path = zsh/.oh-my-zsh/custom/plugins/autojump
 	url = https://github.com/wting/autojump
+[submodule "npm/.nvm"]
+	path = npm/.nvm
+	url = https://github.com/creationix/nvm
+[submodule "zsh/.oh-my-zsh/custom/plugins/zsh-nvm"]
+	path = zsh/.oh-my-zsh/custom/plugins/zsh-nvm
+	url = https://github.com/lukechilds/zsh-nvm
