@@ -15,4 +15,4 @@ else
     _arguments \
       "-d:*: :(${all_contexts})" \
       "(- *): :(${all_contexts})"
-f
+fi
