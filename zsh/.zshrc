@@ -64,7 +64,7 @@ plugins=(
   brew
   git
   fzf-tab
-  k
+  kubectl
   zsh-autosuggestions
   zsh-syntax-highlighting
   zsh-nvm
@@ -106,4 +106,3 @@ export FZF_DEFAULT_COMMAND="ag --hidden --ignore .git -f -g "
 [ -f /Users/brendandevenney/.travis/travis.sh ] && source /Users/brendandevenney/.travis/travis.sh
 
 autoload -U compinit && compinit
-
