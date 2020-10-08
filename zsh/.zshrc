@@ -61,8 +61,12 @@ ZSH_THEME="pure"
 plugins=(
   almostontop
   autojump
+  brew
   git
+  fzf-tab
+  k
   zsh-autosuggestions
+  zsh-syntax-highlighting
   zsh-nvm
 )
 
@@ -73,6 +77,8 @@ for file in ~/.zsh/*; do
   source "$file"
 done
 
+export GPG_TTY=$(tty)
+
 # User configuration
 export EDITOR='vim'
 
@@ -81,11 +87,23 @@ export PY_USER_SITE=$(/usr/bin/env python3 -m site --user-site)
 
 case `uname` in
   Darwin)
-    export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/Library/Python/3.7/bin"
+    export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/Library/Python/3.7/bin"
+    alias vim="mvim -v"
   ;;
   Linux)
     export PATH="$PATH:$HOME:/.local/bin"
   ;;
 esac
 
+eval "$(goenv init -)"
+eval "$(rbenv init -)"
+eval $(thefuck --alias)
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND="ag --hidden --ignore .git -f -g "
+
+# added by travis gem
+[ -f /Users/brendandevenney/.travis/travis.sh ] && source /Users/brendandevenney/.travis/travis.sh
+
+autoload -U compinit && compinit
+
