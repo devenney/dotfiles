@@ -85,3 +85,6 @@
 [submodule "zsh/.oh-my-zsh/custom/plugins/k"]
 	path = zsh/.oh-my-zsh/custom/plugins/k
 	url = https://github.com/supercrabtree/k
+[submodule "zsh/.oh-my-zsh/custom/plugins/zsh-kubectl-prompt"]
+	path = zsh/.oh-my-zsh/custom/plugins/zsh-kubectl-prompt
+	url = git@github.com:superbrothers/zsh-kubectl-prompt.git
