@@ -1,12 +1,6 @@
 [submodule "vim/.vim/pack/plugins/start/nerdtree"]
 	path = vim/.vim/pack/plugins/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree
-[submodule "zsh/.oh-my-zsh/custom/plugins/zsh-autosuggestions"]
-	path = zsh/.oh-my-zsh/custom/plugins/zsh-autosuggestions
-	url = https://github.com/zsh-users/zsh-autosuggestions
-[submodule "zsh/.oh-my-zsh/custom/plugins/almostontop"]
-	path = zsh/.oh-my-zsh/custom/plugins/almostontop
-	url = https://github.com/Valiev/almostontop
 [submodule "vim/.vim/pack/plugins/start/vim-unimpaired"]
 	path = vim/.vim/pack/plugins/start/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired
@@ -58,15 +52,9 @@
 [submodule "zsh/.oh-my-zsh/custom/themes/pure"]
 	path = zsh/.oh-my-zsh/custom/themes/pure
 	url = https://github.com/sindresorhus/pure
-[submodule "zsh/.oh-my-zsh/custom/plugins/autojump"]
-	path = zsh/.oh-my-zsh/custom/plugins/autojump
-	url = https://github.com/wting/autojump
 [submodule "npm/.nvm"]
 	path = npm/.nvm
 	url = https://github.com/creationix/nvm
-[submodule "zsh/.oh-my-zsh/custom/plugins/zsh-nvm"]
-	path = zsh/.oh-my-zsh/custom/plugins/zsh-nvm
-	url = https://github.com/lukechilds/zsh-nvm
 [submodule "vim/.vim/pack/plugins/start/vim-mustache-handlebars"]
 	path = vim/.vim/pack/plugins/start/vim-mustache-handlebars
 	url = https://github.com/mustache/vim-mustache-handlebars
@@ -76,12 +64,42 @@
 [submodule "vim/.vim/pack/plugins/start/tmuxline.vim"]
 	path = vim/.vim/pack/plugins/start/tmuxline.vim
 	url = https://github.com/edkolev/tmuxline.vim
-[submodule "zsh/.oh-my-zsh/custom/plugins/fzf-tab"]
-	path = zsh/.oh-my-zsh/custom/plugins/fzf-tab
+[submodule "vim/.vim/pack/plugins/start/spaceduck"]
+	path = vim/.vim/pack/plugins/start/spaceduck
+	url = https://github.com/pineapplegiant/spaceduck
+[submodule "vim/.vim/pack/plugins/opt/coc.nvim"]
+	path = vim/.vim/pack/plugins/opt/coc.nvim
+	url = https://github.com/neoclide/coc.nvim
+[submodule "vim/.vim/pack/plugins/opt/coc-explorer"]
+	path = vim/.vim/pack/plugins/opt/coc-explorer
+	url = https://github.com/weirongxu/coc-explorer
+[submodule "zsh/.oh-my-zsh/custom/themes/powerlevel10k"]
+	path = zsh/.oh-my-zsh/custom/themes/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git
+[submodule "zsh/.oh-my-zsh/custom/almostontop"]
+	path = zsh/.oh-my-zsh/custom/almostontop
+	url = https://github.com/Valiev/almostontop
+[submodule "zsh/.oh-my-zsh/plugins/almostontop"]
+	path = zsh/.oh-my-zsh/plugins/almostontop
+	url = https://github.com/Valiev/almostontop
+[submodule "tmux/.tmux/tmux-powerline"]
+	path = tmux/.tmux/tmux-powerline
+	url = https://github.com/erikw/tmux-powerline.git
+[submodule "zsh/.oh-my-zsh/plugins/zsh-autosuggestions"]
+	path = zsh/.oh-my-zsh/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "zsh/.oh-my-zsh/plugins/fzf-tab"]
+	path = zsh/.oh-my-zsh/plugins/fzf-tab
 	url = https://github.com/Aloxaf/fzf-tab
 [submodule "zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting"]
 	path = zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
-[submodule "zsh/.oh-my-zsh/custom/plugins/k"]
-	path = zsh/.oh-my-zsh/custom/plugins/k
-	url = https://github.com/supercrabtree/k
+[submodule "zsh/.oh-my-zsh/plugins/zsh-syntax-highlighting"]
+	path = zsh/.oh-my-zsh/plugins/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting
+[submodule "zsh/.oh-my-zsh/plugins/zsh-you-should-use"]
+	path = zsh/.oh-my-zsh/plugins/you-should-use
+	url = https://github.com/MichaelAquilina/zsh-you-should-use
+[submodule "nvim/.nvim/autoload/plugged/any-jump.vim"]
+	path = nvim/.nvim/autoload/plugged/any-jump.vim
+	url = https://github.com/pechorin/any-jump

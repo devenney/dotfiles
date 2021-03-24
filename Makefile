@@ -14,6 +14,14 @@ go-stow:
 	export GOPATH=$(HOME)/go;
 	export GO111MODULE=auto
 
+nvim: nvim-stow nvim-plug
+
+nvim-stow:
+	stow nvim
+
+nvim-plug:
+	nvim +PlugInstall +qall
+
 # Vim #
 vim: vim-fzf vim-ycm vim-stow
 
@@ -28,6 +36,9 @@ vim-ycm:
 	cd vim/.vim/pack/plugins/start/YouCompleteMe;	\
 	git submodule update --init --recursive;			\
 	python3 install.py --go-completer
+
+zsh-stow:
+	stow zsh
 
 # Warnings #
 end:
