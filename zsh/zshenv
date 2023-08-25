@@ -1,0 +1,60 @@
+#!/usr/bin/env zsh
+# vim: set filetype=zsh
+
+# Make Vi mode transitions faster (KEYTIMEOUT is in hundredths of a second)
+export KEYTIMEOUT=1
+
+# Set the system-wide editor
+export EDITOR=nvim
+
+# Set XDG_CONFIG_HOME
+export XDG_CONFIG_HOME="${HOME}/.config"
+
+# Set the GPG_TTY to the current TTY
+export GPG_TTY=${TTY}
+
+# Homebrew
+case "${OSTYPE}" in
+    linux*) brew_path="/home/linuxbrew/.linuxbrew" ;;
+    darwin*) brew_path="/opt/homebrew" ;;
+esac
+if [[ -f "${brew_path}/bin/brew" ]]; then
+    eval "$(${brew_path}/bin/brew shellenv)"
+fi
+
+# FZF
+export FZF_DEFAULT_COMMAND='find -L'
+export FZF_DEFAULT_OPTS="\
+--bind 'alt-a:select-all,alt-d:deselect-all' \
+--tiebreak=index \
+--cycle \
+--no-separator \
+--info inline \
+--color=16,fg:7,bg:-1,hl:5,fg+:13,bg+:8,hl+:6,info:2,prompt:4,pointer:13,marker:3,spinner:4,header:4"
+export FZF_CTRL_R_OPTS="--layout=reverse --preview-window hidden"
+
+# Golang
+export GOPATH="${HOME}/go"
+if [[ ! "${PATH}" == *${GOPATH}/bin* ]]; then
+    export PATH="${PATH}:${GOPATH}/bin"
+fi
+
+# Rust
+if [[ -f "${HOME}/.cargo/env" ]]; then
+    source "${HOME}/.cargo/env"
+fi
+
+# NVM
+export NVM_DIR="${HOME}/.nvm"
+export NVM_LAZY_LOAD=true
+export NVM_LAZY_LOAD_EXTRA_COMMANDS=('vim' 'nvim')
+
+# Append ~/bin directory to PATH
+if [[ ! "${PATH}" == *${HOME}/bin* ]]; then
+    export PATH="${HOME}/bin:${PATH}"
+fi
+
+# Append current directory to PATH
+if [[ ! "${PATH}" == *:.* ]]; then
+    export PATH="${PATH}:."
+fi
