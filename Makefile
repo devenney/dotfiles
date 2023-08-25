@@ -12,3 +12,7 @@ kitty:
 nvim:
 	rm -rf "${XDG_CONFIG_HOME}/nvim" && mkdir -p "${XDG_CONFIG_HOME}"
 	ln -fs "${DOTFILES_DIR}/nvim" "${XDG_CONFIG_HOME}/"
+
+.PHONY: zsh
+zsh:
+	@./scripts/oh-my-zsh.sh configure
